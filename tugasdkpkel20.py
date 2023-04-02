@@ -14,3 +14,10 @@ def count(self, text):
                     self.vowels += 1
                 else:
                     self.consonants += 1
+
+# program utama
+text = input("Masukkan teks: ")
+counter = Counter()
+counter.count(text)
+print("Jumlah huruf vokal:", counter.vowels)
+print("Jumlah huruf konsonan:", counter.consonants)
